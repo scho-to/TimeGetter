@@ -77,6 +77,7 @@ class TimeGetter():
             elapsed = elapsed + 1
         return elapsed
 
+#Change below:
 time1 = Time(
     day=7,
     month=9,
@@ -94,8 +95,6 @@ time2 = Time(
     second=36
 )
 
-print(time1)
-print(time2)
 tg = TimeGetter(time1, time2)
 time_between = tg.get_between()
 print(time_between.get_time_as_string())
